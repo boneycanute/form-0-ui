@@ -1,26 +1,26 @@
 "use client";
 
-import Image from "next/image";
-import styles from "@/styles/Home.module.css";
-import { satoshiFont } from "@/utils";
-import { MainContent, ProgressBar } from "@/components";
-import classNames from "classnames";
+import { ProgressBar, Mascot, MainContent } from "@/components";
 import { SharedStatesProvider, useQuestions } from "@/contexts";
+import { satoshiFont } from "@/utils";
+import classNames from "classnames";
 
 export default function Home() {
   const { percent } = useQuestions();
 
   return (
     <>
-      <header className={styles.header}>
+      <header>
         <ProgressBar width={percent} />
-        {/* <Image src="/logo.png" alt="GrowthX logo" width={160} height={24} /> */}
       </header>
-      <main className={classNames(styles.main, satoshiFont.className)}>
-        <SharedStatesProvider>
-          <MainContent />
-        </SharedStatesProvider>
-      </main>
+      <div className={classNames("form-container", satoshiFont.className)}>
+        <div className="form-content">
+          <Mascot />
+          <SharedStatesProvider>
+            <MainContent />
+          </SharedStatesProvider>
+        </div>
+      </div>
     </>
   );
 }
