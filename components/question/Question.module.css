@@ -6,7 +6,9 @@
 /***** btn-container *****/
 
 .btn-container.ok {
-  margin-top: 15px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .btn-container.ok > button {
@@ -117,6 +119,19 @@
 @media screen and (max-width: 368px) {
   .goal-option > .goal {
     width: 23rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .question-box {
+    margin: 0;
+    width: 100%;
+  }
+  .btn-container.ok {
+    margin-top: 0.5rem;
+  }
+  .question-box > * + * {
+    margin-top: 0.5rem;
   }
 }
 

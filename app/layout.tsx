@@ -1,6 +1,7 @@
 import { QuestionsProvider } from "@/contexts";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
+import { Mascot } from "@/components/Mascot";
 
 export const metadata: Metadata = {
   title: "Agent Creation",
@@ -16,7 +17,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <QuestionsProvider>
-          {children}
+          <div className="form-container">
+            <div className="form-content">
+              <Mascot />
+              {children}
+            </div>
+          </div>
         </QuestionsProvider>
       </body>
     </html>

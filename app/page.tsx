@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <header className={styles.header}>
         <ProgressBar width={percent} />
-        <Image src="/logo.png" alt="GrowthX logo" width={160} height={24} />
+        {/* <Image src="/logo.png" alt="GrowthX logo" width={160} height={24} /> */}
       </header>
       <main className={classNames(styles.main, satoshiFont.className)}>
         <SharedStatesProvider>
