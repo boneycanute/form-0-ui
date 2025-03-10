@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./BtnContainer.module.css";
 import { MouseEventHandler, ReactNode, useEffect, useState } from "react";
 import { questrialFont } from "@/utils";

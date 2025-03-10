@@ -1,3 +1,4 @@
+"use client";
 import { QuestionBoxHeading } from "../index";
 import classNames from "classnames";
 import styles from "./QuestionNumHeading.module.css";

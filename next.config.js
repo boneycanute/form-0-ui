@@ -4,6 +4,9 @@ const nextConfig = {
   eslint: {
     dirs: ["."],
   },
+  images: {
+    remotePatterns: [],
+  },
 };
 
 module.exports = nextConfig;

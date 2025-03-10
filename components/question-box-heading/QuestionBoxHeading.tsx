@@ -1,3 +1,4 @@
+"use client";
 import { ReactNode } from "react";
 import styles from "./QuestionBoxHeading.module.css";
 import classNames from "classnames";

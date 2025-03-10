@@ -1,4 +1,5 @@
-import Head from "next/head";
+"use client";
+
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import { satoshiFont } from "@/utils";
@@ -11,12 +12,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Agent Creation</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="BTI Agent Creation" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <header className={styles.header}>
         <ProgressBar width={percent} />
         <Image src="/logo.png" alt="GrowthX logo" width={160} height={24} />

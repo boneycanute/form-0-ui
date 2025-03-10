@@ -1,3 +1,4 @@
+"use client";
 import { TOTAL_QUESTIONS } from "@/constants";
 import { questionsInitialState, questionsReducerFunc } from "@/reducers";
 import { QuestionsContextType } from "@/types";

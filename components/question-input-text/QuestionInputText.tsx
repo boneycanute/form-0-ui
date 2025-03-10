@@ -1,3 +1,4 @@
+"use client";
 import { questrialFont } from "@/utils";
 import {
   ChangeEventHandler,

@@ -1,3 +1,5 @@
+"use client";
+
 import { useSharedStates } from "@/contexts";
 import { useHandleKeypress, useHandleScroll } from "@/hooks";
 import { useEffect } from "react";

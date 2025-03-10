@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { TOTAL_QUESTIONS } from "@/constants";
 import { ObjectType, QuestionNumType, SharedStatesContextType } from "@/types";
